@@ -1,0 +1,101 @@
+#intro{
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 80rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+
+}
+.bg{
+    position: absolute;
+    top: 0rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 80vh;
+    border-radius: 25rem;
+    border-bottom: 23px;
+}
+
+.introContent{
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+
+}
+
+.hello{
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.introName{
+    color:#007F7F;
+}
+.introPara{
+    font-size: medium;
+    font-weight: 200;
+    letter-spacing: 1px;
+
+}
+
+.btn{
+    background:#007F7F;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: small;
+}
+
+.btnImg{
+    object-fit: cover;
+    margin: 0.6rem;
+    height: 2rem;
+
+
+}
+@media screen and (max-width: 1000px) {
+    .bg {
+        position: relative; 
+        width: 40%; 
+        height: auto; 
+        margin-top: 1rem; 
+        border-radius: 23rem;
+        border-bottom: none; 
+    }
+
+    .introContent {
+        text-align: center;
+        margin-left: 0; 
+    }
+}
+
+/* Define keyframes for the animation */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .introContent {
+    animation: fadeInDown 1s ease-in-out; 
+  }
+  

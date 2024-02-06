@@ -1,0 +1,135 @@
+#contactPage{
+    min-height: calc(100vh-4rem);
+    width: 100vw;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeInDown 1s ease-in-out;
+    
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.contactPageTitle{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #007F7F; 
+}
+
+.contactDesc{
+    font-size: 5rem;
+    padding: 1rem;
+    font-size: medium;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.contactForm{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 60rem;
+    
+}
+
+.name, .email, .msg{
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: rgb(255, 255, 255);
+    border: #007F7F;
+    border-radius: 1rem;
+    background: linear-gradient(to bottom, #004439, #008080, #161616);
+}
+
+.submitBtn{
+font-size: 1rem;
+background: #007F7F;
+border: none;
+border-radius: 2rem;
+margin: 2rem;
+padding: 0.75rem 3.5rem;
+cursor: pointer;
+
+}
+
+.links{
+display: flex;
+flex-wrap: wrap;
+cursor: pointer;
+
+}
+
+.link{
+    object-fit: cover;
+    height: 2rem;
+    width: 2rem;
+    margin: 0 0.75rem;
+
+}
+@media screen and (max-width: 768px) {
+    .contactPageTitle {
+        font-size: 2rem;
+    }
+    
+    .contactDesc {
+        font-size: 1.5rem;
+    }
+
+    .contactForm {
+        width: 90%;
+        max-width: 90%;
+    }
+
+    .name, .email, .msg {
+        max-width: 90%;
+    }
+
+    .submitBtn {
+        padding: 0.5rem 2rem;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contactForm{
+        margin: 0;
+    }
+    .contactPageTitle {
+        font-size: 1.5rem;
+    }
+
+    .contactDesc {
+        font-size: 1.2rem;
+    }
+
+    .name, .email, .msg {
+        max-width: 95%;
+    }
+
+    .submitBtn {
+        padding: 0.5rem 1.5rem;
+    }
+}
